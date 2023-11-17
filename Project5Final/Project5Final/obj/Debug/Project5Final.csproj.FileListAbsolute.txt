@@ -9,3 +9,5 @@ C:\Fall - 2023\C#\FinalProject\5606-project5\Project5Final\Project5Final\obj\Deb
 C:\Fall - 2023\C#\FinalProject\5606-project5\Project5Final\Project5Final\obj\Debug\Project5Final.exe
 C:\Fall - 2023\C#\FinalProject\5606-project5\Project5Final\Project5Final\obj\Debug\Project5Final.pdb
 C:\Fall - 2023\C#\FinalProject\5606-project5\Project5Final\Project5Final\obj\Debug\Project5Final.AboutBox1.resources
+C:\Fall - 2023\C#\FinalProject\5606-project5\Project5Final\Project5Final\bin\Debug\AppData\BloodBankDatabase.mdf
+C:\Fall - 2023\C#\FinalProject\5606-project5\Project5Final\Project5Final\bin\Debug\AppData\BloodBankDatabase_log.ldf

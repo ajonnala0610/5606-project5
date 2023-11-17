@@ -28,9 +28,9 @@ namespace Project5Final.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\AppData\\Blood" +
             "BankDatabase.mdf;Integrated Security=True;Connect Timeout=30")]
-        public string rnrConnString {
+        public string BBConnString {
             get {
-                return ((string)(this["rnrConnString"]));
+                return ((string)(this["BBConnString"]));
             }
         }
     }

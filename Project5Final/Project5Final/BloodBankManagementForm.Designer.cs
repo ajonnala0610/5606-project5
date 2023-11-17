@@ -107,6 +107,7 @@
             this.deleteDonorToolStripMenuItem.Name = "deleteDonorToolStripMenuItem";
             this.deleteDonorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.deleteDonorToolStripMenuItem.Text = "&Delete Donor";
+            
             // 
             // viewAllDonorsToolStripMenuItem
             // 
@@ -127,13 +128,13 @@
             // byAddressToolStripMenuItem
             // 
             this.byAddressToolStripMenuItem.Name = "byAddressToolStripMenuItem";
-            this.byAddressToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.byAddressToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
             this.byAddressToolStripMenuItem.Text = "&Location";
             // 
             // bloodGroupToolStripMenuItem
             // 
             this.bloodGroupToolStripMenuItem.Name = "bloodGroupToolStripMenuItem";
-            this.bloodGroupToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.bloodGroupToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
             this.bloodGroupToolStripMenuItem.Text = "&Blood Group";
             // 
             // stockManagementToolStripMenuItem
@@ -148,13 +149,13 @@
             // increaseDecreaseToolStripMenuItem
             // 
             this.increaseDecreaseToolStripMenuItem.Name = "increaseDecreaseToolStripMenuItem";
-            this.increaseDecreaseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.increaseDecreaseToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
             this.increaseDecreaseToolStripMenuItem.Text = "&Increase / Decrease";
             // 
             // detailsToolStripMenuItem
             // 
             this.detailsToolStripMenuItem.Name = "detailsToolStripMenuItem";
-            this.detailsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.detailsToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
             this.detailsToolStripMenuItem.Text = "D&etails";
             // 
             // helpToolStripMenuItem

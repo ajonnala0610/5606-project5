@@ -16,5 +16,18 @@ namespace Project5Final
         {
             InitializeComponent();
         }
-    }
-}
+
+        private void ViewAllDonorsForm_Load(object sender, EventArgs e)
+        {
+            //instantiate intermediary class
+            BloodBankDataIntermediary bloodBankDataIntermediary = new BloodBankDataIntermediary();
+            //get the data from the intermediary class.
+            DataSet bbData = bloodBankDataIntermediary.ViewAllDonors();
+            //assign the dataset as datasource for the datagridview
+            bbDataGridView.DataSource = bbData.Tables[0];
+            bbDataGridView.AutoGenerateColumns = true;//better readability
+            bbDataGridView.ReadOnly = true;//prevent edits by users.
+        }//form the load event
+    }//form class
+}// namespace
+

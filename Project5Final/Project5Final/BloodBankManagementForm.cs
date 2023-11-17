@@ -37,7 +37,16 @@ namespace Project5Final
 
         private void viewAllDonorsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //instantiate the view all donors form
+            ViewAllDonorsForm viewalldonorlabel = new ViewAllDonorsForm();
+            //Make the view all donor form as a child form to the main form
+            viewalldonorlabel.MdiParent = this;
+            //show the view all donor form
+            viewalldonorlabel.Show();
+        }
 
         }
+
+      
     }
-}
+

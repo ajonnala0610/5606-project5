@@ -28,38 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.viewAllDonorLabel = new System.Windows.Forms.Label();
+            this.closeButton = new System.Windows.Forms.Button();
+            this.bbDataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.bbDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // viewAllDonorLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(363, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "View All Donors";
+            this.viewAllDonorLabel.AutoSize = true;
+            this.viewAllDonorLabel.BackColor = System.Drawing.Color.Transparent;
+            this.viewAllDonorLabel.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewAllDonorLabel.Location = new System.Drawing.Point(340, 24);
+            this.viewAllDonorLabel.Name = "viewAllDonorLabel";
+            this.viewAllDonorLabel.Size = new System.Drawing.Size(207, 32);
+            this.viewAllDonorLabel.TabIndex = 0;
+            this.viewAllDonorLabel.Text = "View All Donors";
             // 
-            // button1
+            // closeButton
             // 
-            this.button1.Location = new System.Drawing.Point(366, 395);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = true;
+            this.closeButton.BackColor = System.Drawing.Color.Transparent;
+            this.closeButton.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeButton.Location = new System.Drawing.Point(772, 402);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(83, 35);
+            this.closeButton.TabIndex = 1;
+            this.closeButton.Text = "Close";
+            this.closeButton.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // bbDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(74, 86);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(625, 269);
-            this.dataGridView1.TabIndex = 2;
+            this.bbDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bbDataGridView.Location = new System.Drawing.Point(55, 72);
+            this.bbDataGridView.Name = "bbDataGridView";
+            this.bbDataGridView.RowHeadersWidth = 51;
+            this.bbDataGridView.RowTemplate.Height = 24;
+            this.bbDataGridView.Size = new System.Drawing.Size(776, 298);
+            this.bbDataGridView.TabIndex = 2;
             // 
             // ViewAllDonorsForm
             // 
@@ -67,13 +72,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Project5Final.Properties.Resources.BackgroundGradient;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(951, 497);
+            this.Controls.Add(this.bbDataGridView);
+            this.Controls.Add(this.closeButton);
+            this.Controls.Add(this.viewAllDonorLabel);
             this.Name = "ViewAllDonorsForm";
             this.Text = "ViewAllDonorsForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.ViewAllDonorsForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bbDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,8 +87,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label viewAllDonorLabel;
+        private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.DataGridView bbDataGridView;
     }
 }

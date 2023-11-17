@@ -9,8 +9,6 @@ C:\Fall - 2023\C#\FinalProject\5606-project5\Project5Final\Project5Final\obj\Deb
 C:\Fall - 2023\C#\FinalProject\5606-project5\Project5Final\Project5Final\obj\Debug\Project5Final.exe
 C:\Fall - 2023\C#\FinalProject\5606-project5\Project5Final\Project5Final\obj\Debug\Project5Final.pdb
 C:\Fall - 2023\C#\FinalProject\5606-project5\Project5Final\Project5Final\obj\Debug\Project5Final.AboutBox1.resources
-C:\Fall - 2023\C#\FinalProject\5606-project5\Project5Final\Project5Final\bin\Debug\AppData\BloodBankDatabase.mdf
-C:\Fall - 2023\C#\FinalProject\5606-project5\Project5Final\Project5Final\bin\Debug\AppData\BloodBankDatabase_log.ldf
 C:\C# Final Project\5606-project5\Project5Final\Project5Final\bin\Debug\AppData\BloodBankDatabase_log.ldf
 C:\C# Final Project\5606-project5\Project5Final\Project5Final\bin\Debug\Project5Final.exe
 C:\C# Final Project\5606-project5\Project5Final\Project5Final\bin\Debug\AppData\BloodBankDatabase.mdf
@@ -25,3 +23,6 @@ C:\C# Final Project\5606-project5\Project5Final\Project5Final\obj\Debug\Project5
 C:\C# Final Project\5606-project5\Project5Final\Project5Final\obj\Debug\Project5Final.exe
 C:\C# Final Project\5606-project5\Project5Final\Project5Final\obj\Debug\Project5Final.pdb
 C:\C# Final Project\5606-project5\Project5Final\Project5Final\bin\Debug\Project5Final.pdb
+C:\Fall - 2023\C#\FinalProject\5606-project5\Project5Final\Project5Final\bin\Debug\AppData\BloodBankManagementDB.mdf
+C:\Fall - 2023\C#\FinalProject\5606-project5\Project5Final\Project5Final\bin\Debug\AppData\BloodBankManagementDB_log.ldf
+C:\Fall - 2023\C#\FinalProject\5606-project5\Project5Final\Project5Final\obj\Debug\Project5Final.ViewAllDonorsForm.resources

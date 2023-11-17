@@ -24,3 +24,4 @@ C:\C# Final Project\5606-project5\Project5Final\Project5Final\obj\Debug\Project5
 C:\C# Final Project\5606-project5\Project5Final\Project5Final\obj\Debug\Project5Final.csproj.CoreCompileInputs.cache
 C:\C# Final Project\5606-project5\Project5Final\Project5Final\obj\Debug\Project5Final.exe
 C:\C# Final Project\5606-project5\Project5Final\Project5Final\obj\Debug\Project5Final.pdb
+C:\C# Final Project\5606-project5\Project5Final\Project5Final\bin\Debug\Project5Final.pdb

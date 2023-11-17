@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Project5Final")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Final Project - Team 5")]
+[assembly: AssemblyDescription("Blood Bank Management System")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("5606 - Final Project")]
 [assembly: AssemblyProduct("Project5Final")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]

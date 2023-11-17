@@ -17,14 +17,23 @@ namespace Project5Final
             InitializeComponent();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+       
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //brings up the about box.
+            //1. instantiate the about form
+            AboutBox1 aboutBox1 = new AboutBox1();
+            //2. Make the about box as a child form to the main form
+            aboutBox1.MdiParent = this;
+            //3. show the about box
+            aboutBox1.Show();
+        }
+
+        private void fileExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }

@@ -56,12 +56,11 @@
             this.donorManagementToolStripMenuItem,
             this.searhForDonorToolStripMenuItem,
             this.stockManagementToolStripMenuItem,
-            this.helpToolStripMenuItem,
-            });
+            this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(713, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(951, 26);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -70,13 +69,13 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileExitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // fileExitToolStripMenuItem
             // 
             this.fileExitToolStripMenuItem.Name = "fileExitToolStripMenuItem";
-            this.fileExitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.fileExitToolStripMenuItem.Size = new System.Drawing.Size(116, 26);
             this.fileExitToolStripMenuItem.Text = "E&xit";
             this.fileExitToolStripMenuItem.Click += new System.EventHandler(this.fileExitToolStripMenuItem_Click);
             // 
@@ -88,32 +87,33 @@
             this.deleteDonorToolStripMenuItem,
             this.viewAllDonorsToolStripMenuItem});
             this.donorManagementToolStripMenuItem.Name = "donorManagementToolStripMenuItem";
-            this.donorManagementToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.donorManagementToolStripMenuItem.Size = new System.Drawing.Size(157, 24);
             this.donorManagementToolStripMenuItem.Text = "&Donor Management";
             // 
             // addDonorToolStripMenuItem
             // 
             this.addDonorToolStripMenuItem.Name = "addDonorToolStripMenuItem";
-            this.addDonorToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.addDonorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.addDonorToolStripMenuItem.Text = "&Add New Donor";
             // 
             // updateDonorToolStripMenuItem
             // 
             this.updateDonorToolStripMenuItem.Name = "updateDonorToolStripMenuItem";
-            this.updateDonorToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.updateDonorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.updateDonorToolStripMenuItem.Text = "&Update Donor";
             // 
             // deleteDonorToolStripMenuItem
             // 
             this.deleteDonorToolStripMenuItem.Name = "deleteDonorToolStripMenuItem";
-            this.deleteDonorToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.deleteDonorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.deleteDonorToolStripMenuItem.Text = "&Delete Donor";
             // 
             // viewAllDonorsToolStripMenuItem
             // 
             this.viewAllDonorsToolStripMenuItem.Name = "viewAllDonorsToolStripMenuItem";
-            this.viewAllDonorsToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.viewAllDonorsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.viewAllDonorsToolStripMenuItem.Text = "&View All Donors";
+            this.viewAllDonorsToolStripMenuItem.Click += new System.EventHandler(this.viewAllDonorsToolStripMenuItem_Click);
             // 
             // searhForDonorToolStripMenuItem
             // 
@@ -121,19 +121,19 @@
             this.byAddressToolStripMenuItem,
             this.bloodGroupToolStripMenuItem});
             this.searhForDonorToolStripMenuItem.Name = "searhForDonorToolStripMenuItem";
-            this.searhForDonorToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.searhForDonorToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
             this.searhForDonorToolStripMenuItem.Text = "S&earch For Donor";
             // 
             // byAddressToolStripMenuItem
             // 
             this.byAddressToolStripMenuItem.Name = "byAddressToolStripMenuItem";
-            this.byAddressToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.byAddressToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.byAddressToolStripMenuItem.Text = "&Location";
             // 
             // bloodGroupToolStripMenuItem
             // 
             this.bloodGroupToolStripMenuItem.Name = "bloodGroupToolStripMenuItem";
-            this.bloodGroupToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.bloodGroupToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.bloodGroupToolStripMenuItem.Text = "&Blood Group";
             // 
             // stockManagementToolStripMenuItem
@@ -142,19 +142,19 @@
             this.increaseDecreaseToolStripMenuItem,
             this.detailsToolStripMenuItem});
             this.stockManagementToolStripMenuItem.Name = "stockManagementToolStripMenuItem";
-            this.stockManagementToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.stockManagementToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
             this.stockManagementToolStripMenuItem.Text = "Stock &Management";
             // 
             // increaseDecreaseToolStripMenuItem
             // 
             this.increaseDecreaseToolStripMenuItem.Name = "increaseDecreaseToolStripMenuItem";
-            this.increaseDecreaseToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.increaseDecreaseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.increaseDecreaseToolStripMenuItem.Text = "&Increase / Decrease";
             // 
             // detailsToolStripMenuItem
             // 
             this.detailsToolStripMenuItem.Name = "detailsToolStripMenuItem";
-            this.detailsToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.detailsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.detailsToolStripMenuItem.Text = "D&etails";
             // 
             // helpToolStripMenuItem
@@ -162,13 +162,13 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem1});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // aboutToolStripMenuItem1
             // 
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(133, 26);
             this.aboutToolStripMenuItem1.Text = "Ab&out";
             this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -181,16 +181,16 @@
             // 
             // BloodBankManagementForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Project5Final.Properties.Resources.BackgroundImage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(713, 393);
+            this.ClientSize = new System.Drawing.Size(951, 484);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "BloodBankManagementForm";
             this.Text = "Blood Bank Management System";
             this.menuStrip1.ResumeLayout(false);

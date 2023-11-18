@@ -28,6 +28,11 @@ namespace Project5Final
             bbDataGridView.AutoGenerateColumns = true;//better readability
             bbDataGridView.ReadOnly = true;//prevent edits by users.
         }//form the load event
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }//form class
 }// namespace
 

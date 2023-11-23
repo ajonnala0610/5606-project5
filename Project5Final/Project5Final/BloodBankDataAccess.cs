@@ -13,26 +13,26 @@ namespace Project5Final
     internal class BloodBankDataAccess
     {
         //declare the connection
-        private SqlConnection bloodbankdataConnection;
+        private SqlConnection bbDataConnection;
         //declare the conn string
         private string bbConnString = ConfigurationManager.ConnectionStrings["Project5Final.Properties.Settings.BBConnString"].ConnectionString;
         //set up the connection
         public SqlConnection GetConnection()
         {
-            if (bloodbankdataConnection == null)
-                bloodbankdataConnection = new SqlConnection(bbConnString);
-            return bloodbankdataConnection;
+            if (bbDataConnection == null)
+                bbDataConnection = new SqlConnection(bbConnString);
+            return bbDataConnection;
         }//end GetConnection()
 
         //open connection
-        public void OpenNwConnection()
+        public void OpenNWConnection()
         {
-            if (bloodbankdataConnection.State == ConnectionState.Closed) bloodbankdataConnection.Open();
+            if (bbDataConnection.State == ConnectionState.Closed) bbDataConnection.Open();
         }//end openConnection
 
-        public void CloseNwConnection()
+        public void CloseNWConnection()
         {
-            bloodbankdataConnection.Close();
+            bbDataConnection.Close();
         }//end closeNWConnection()
 
         public DataSet ViewAllDonorsSelectQueryData(string query)
@@ -43,7 +43,7 @@ namespace Project5Final
                 //instantiate data adapter:
                 DataAdapter bbDataAdapter = new SqlDataAdapter(query, this.GetConnection());
                 //open the connection:
-                this.OpenNwConnection();//open connection.
+                this.OpenNWConnection();//open connection.
                 //fill the data into the data set
                 bbDataAdapter.Fill(bbDataSet);
                 return bbDataSet;
@@ -56,9 +56,88 @@ namespace Project5Final
             finally
             {
                 //close the connection
-                this.CloseNwConnection();
+                this.CloseNWConnection();
             }//try //catch //finally
         }//viewalldonorsdata
+
+
+        public DataSet GetBloodGroupStocksSelectQueryData(string query)
+        {
+            DataSet stockDataSet = new DataSet();
+            try
+            {
+                //instantiate data adapter
+                DataAdapter stockDataAdapter = new SqlDataAdapter(query, this.GetConnection());
+                //open the connection
+                this.OpenNWConnection();
+
+                //fill the data into the data set
+                stockDataAdapter.Fill(stockDataSet);
+                return stockDataSet;
+            }//end of try
+            catch (Exception ex)
+            {
+                throw ex.InnerException;
+            }//end of catch
+            finally
+            {
+                this.CloseNWConnection();
+            }//end of finally
+
+        }
+
+        public int GetStockQuantitySelectQueryData(string query,CommandType cmdType)
+        {
+            SqlCommand getQuantityCommand = new SqlCommand(query, this.GetConnection());
+            getQuantityCommand.CommandType = cmdType;
+            int quantity = 0;
+            try
+            {
+                //open the connection
+                this.OpenNWConnection();
+                Object result = getQuantityCommand.ExecuteScalar();
+
+                if(result != null)
+                {
+                    quantity = Convert.ToInt32(result);
+                }
+
+                return quantity;
+
+            }//end of try
+            catch (Exception ex)
+            {
+                throw ex.InnerException;
+            }//end of catch
+            finally
+            {
+                this.CloseNWConnection();
+            }//end of finally
+        }
+
+
+        public int UpdateStockQuantitySelectQueryData(string query, CommandType cmdType) 
+        { 
+            SqlCommand updateQuantityCommand = new SqlCommand( query, this.GetConnection());
+            updateQuantityCommand.CommandType = cmdType;
+            try
+            {
+                //open the connection
+                this.OpenNWConnection();
+                int result = updateQuantityCommand.ExecuteNonQuery();
+                return result;
+
+            }//end of try
+            catch (Exception ex)
+            {
+                throw ex.InnerException;
+            }//end of catch
+            finally
+            {
+                this.CloseNWConnection();
+            }
+
+        }
     }//bbdataaccess class
 }//namespace
 

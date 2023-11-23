@@ -17,13 +17,11 @@ namespace Project5Final
             InitializeComponent();
         }
 
-       
-
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //brings up the about box.
             //1. instantiate the about form
-            AboutBox1 aboutBox1 = new AboutBox1();
+            AboutBox1 aboutBox1 = AboutBox1.AboutBox1Form();
             //2. Make the about box as a child form to the main form
             aboutBox1.MdiParent = this;
             //3. show the about box
@@ -45,7 +43,16 @@ namespace Project5Final
             viewalldonorlabel.Show();
         }
 
+        private void stockIncreaseDecreaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //instantiate the view all donors form
+            StockManagementForm stockManagementForm = StockManagementForm.GetStockManagementForm();
+            //Make the view all donor form as a child form to the main form
+            stockManagementForm.MdiParent = this;
+            //show the view all donor form
+            stockManagementForm.Show();
         }
+    }
 
       
     }

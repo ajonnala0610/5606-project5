@@ -20,7 +20,7 @@ namespace Project5Final
         private void ViewAllDonorsForm_Load(object sender, EventArgs e)
         {
             //instantiate intermediary class
-            BloodBankDataIntermediary bloodBankDataIntermediary = new BloodBankDataIntermediary();
+            BloodBankIntermediary bloodBankDataIntermediary = new BloodBankIntermediary();
             //get the data from the intermediary class.
             DataSet bbData = bloodBankDataIntermediary.ViewAllDonors();
             //assign the dataset as datasource for the datagridview

@@ -69,7 +69,7 @@
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </Compile>
     <Compile Include="BloodBankDataAccess.cs" />
-    <Compile Include="BloodBankDataIntermediary.cs" />
+    <Compile Include="BloodBankIntermediary.cs" />
     <Compile Include="BloodBankManagementForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,8 +82,18 @@
     <Compile Include="DeleteDonorForm.Designer.cs">
       <DependentUpon>DeleteDonorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="IBloodBankIntermediary.cs" />
+    <Compile Include="IStock.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockDecrease.cs" />
+    <Compile Include="StockIncrease.cs" />
+    <Compile Include="StockManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockManagementForm.Designer.cs">
+      <DependentUpon>StockManagementForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewAllDonorsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +119,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="StockManagementForm.resx">
+      <DependentUpon>StockManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewAllDonorsForm.resx">
       <DependentUpon>ViewAllDonorsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +150,8 @@
       <DependentUpon>BloodBankManagementDB.mdf</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\AllPagesBackgroundImage.png" />
+    <None Include="Resources\home.png" />
     <Content Include="Resources\SQLQueries.sql" />
   </ItemGroup>
   <ItemGroup>

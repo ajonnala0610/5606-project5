@@ -63,6 +63,16 @@ namespace Project5Final.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AllPagesBackgroundImage {
+            get {
+                object obj = ResourceManager.GetObject("AllPagesBackgroundImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BackgroundGradient {
             get {
                 object obj = ResourceManager.GetObject("BackgroundGradient", resourceCulture);
@@ -76,6 +86,16 @@ namespace Project5Final.Properties {
         internal static System.Drawing.Bitmap BackgroundImage {
             get {
                 object obj = ResourceManager.GetObject("BackgroundImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap home {
+            get {
+                object obj = ResourceManager.GetObject("home", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

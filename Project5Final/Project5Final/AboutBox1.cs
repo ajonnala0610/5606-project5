@@ -11,7 +11,8 @@ namespace Project5Final
 {
     partial class AboutBox1 : Form
     {
-        public AboutBox1()
+        private static AboutBox1 aboutBox1Instance;
+        private AboutBox1()
         {
             InitializeComponent();
             this.Text = String.Format("About {0}", AssemblyTitle);
@@ -20,6 +21,15 @@ namespace Project5Final
             this.labelCopyright.Text = AssemblyCopyright;
             this.labelCompanyName.Text = AssemblyCompany;
             this.textBoxDescription.Text = AssemblyDescription;
+        }
+
+        public static AboutBox1 AboutBox1Form()
+        {
+            if (aboutBox1Instance == null)
+            {
+                aboutBox1Instance = new AboutBox1();
+            }
+            return aboutBox1Instance;
         }
 
         #region Assembly Attribute Accessors
@@ -105,6 +115,12 @@ namespace Project5Final
         private void okButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void AboutBox1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            aboutBox1Instance = null;
+
         }
     }
 }

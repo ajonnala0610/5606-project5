@@ -52,6 +52,11 @@ namespace Project5Final
             //show the view all donor form
             stockManagementForm.Show();
         }
+
+        private void deleteDonorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
       

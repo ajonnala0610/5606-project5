@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.deleteDonorLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,21 +41,21 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.fatherNameTextBox = new System.Windows.Forms.TextBox();
+            this.motherNameTextBox = new System.Windows.Forms.TextBox();
+            this.dobTextBox = new System.Windows.Forms.TextBox();
+            this.mobileNumberTextBox = new System.Windows.Forms.TextBox();
+            this.donorIDTextBox = new System.Windows.Forms.TextBox();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.cityTextBox = new System.Windows.Forms.TextBox();
+            this.addressRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.deleteButton = new System.Windows.Forms.Button();
+            this.closeButton = new System.Windows.Forms.Button();
+            this.bloodGroupComboBox = new System.Windows.Forms.ComboBox();
+            this.genderComboBox = new System.Windows.Forms.ComboBox();
+            this.buttonReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,16 +69,16 @@
             this.dataGridView1.Size = new System.Drawing.Size(243, 66);
             this.dataGridView1.TabIndex = 0;
             // 
-            // label1
+            // deleteDonorLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(356, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 33);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "DELETE DONOR";
+            this.deleteDonorLabel.AutoSize = true;
+            this.deleteDonorLabel.BackColor = System.Drawing.Color.Transparent;
+            this.deleteDonorLabel.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteDonorLabel.Location = new System.Drawing.Point(356, 9);
+            this.deleteDonorLabel.Name = "deleteDonorLabel";
+            this.deleteDonorLabel.Size = new System.Drawing.Size(224, 33);
+            this.deleteDonorLabel.TabIndex = 1;
+            this.deleteDonorLabel.Text = "DELETE DONOR";
             // 
             // label2
             // 
@@ -201,119 +201,107 @@
             this.label12.TabIndex = 12;
             this.label12.Text = "Address";
             // 
-            // button1
+            // searchButton
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(515, 70);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
+            this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchButton.Location = new System.Drawing.Point(515, 70);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(93, 23);
+            this.searchButton.TabIndex = 13;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
-            // textBox1
+            // nameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(209, 116);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(190, 22);
-            this.textBox1.TabIndex = 14;
+            this.nameTextBox.Location = new System.Drawing.Point(209, 116);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(190, 22);
+            this.nameTextBox.TabIndex = 14;
             // 
-            // textBox2
+            // fatherNameTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(209, 172);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(190, 22);
-            this.textBox2.TabIndex = 15;
+            this.fatherNameTextBox.Location = new System.Drawing.Point(209, 172);
+            this.fatherNameTextBox.Name = "fatherNameTextBox";
+            this.fatherNameTextBox.Size = new System.Drawing.Size(190, 22);
+            this.fatherNameTextBox.TabIndex = 15;
             // 
-            // textBox3
+            // motherNameTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(209, 232);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(190, 22);
-            this.textBox3.TabIndex = 16;
+            this.motherNameTextBox.Location = new System.Drawing.Point(209, 232);
+            this.motherNameTextBox.Name = "motherNameTextBox";
+            this.motherNameTextBox.Size = new System.Drawing.Size(190, 22);
+            this.motherNameTextBox.TabIndex = 16;
             // 
-            // textBox4
+            // dobTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(209, 291);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(190, 22);
-            this.textBox4.TabIndex = 17;
+            this.dobTextBox.Location = new System.Drawing.Point(209, 291);
+            this.dobTextBox.Name = "dobTextBox";
+            this.dobTextBox.Size = new System.Drawing.Size(190, 22);
+            this.dobTextBox.TabIndex = 17;
             // 
-            // textBox5
+            // mobileNumberTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(209, 343);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(190, 22);
-            this.textBox5.TabIndex = 18;
+            this.mobileNumberTextBox.Location = new System.Drawing.Point(209, 343);
+            this.mobileNumberTextBox.Name = "mobileNumberTextBox";
+            this.mobileNumberTextBox.Size = new System.Drawing.Size(190, 22);
+            this.mobileNumberTextBox.TabIndex = 18;
             // 
-            // textBox6
+            // donorIDTextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(209, 400);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(190, 22);
-            this.textBox6.TabIndex = 19;
+            this.donorIDTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.donorIDTextBox.Location = new System.Drawing.Point(336, 63);
+            this.donorIDTextBox.Name = "donorIDTextBox";
+            this.donorIDTextBox.Size = new System.Drawing.Size(100, 30);
+            this.donorIDTextBox.TabIndex = 20;
+            this.donorIDTextBox.TextChanged += new System.EventHandler(this.donorIDTextBox_TextChanged);
             // 
-            // textBox7
+            // emailTextBox
             // 
-            this.textBox7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(336, 63);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 30);
-            this.textBox7.TabIndex = 20;
+            this.emailTextBox.Location = new System.Drawing.Point(667, 123);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(190, 22);
+            this.emailTextBox.TabIndex = 21;
             // 
-            // textBox8
+            // cityTextBox
             // 
-            this.textBox8.Location = new System.Drawing.Point(667, 123);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(190, 22);
-            this.textBox8.TabIndex = 21;
+            this.cityTextBox.Location = new System.Drawing.Point(667, 237);
+            this.cityTextBox.Name = "cityTextBox";
+            this.cityTextBox.Size = new System.Drawing.Size(190, 22);
+            this.cityTextBox.TabIndex = 23;
             // 
-            // textBox10
+            // addressRichTextBox
             // 
-            this.textBox10.Location = new System.Drawing.Point(667, 237);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(190, 22);
-            this.textBox10.TabIndex = 23;
+            this.addressRichTextBox.Location = new System.Drawing.Point(667, 268);
+            this.addressRichTextBox.Name = "addressRichTextBox";
+            this.addressRichTextBox.Size = new System.Drawing.Size(190, 96);
+            this.addressRichTextBox.TabIndex = 24;
+            this.addressRichTextBox.Text = "";
             // 
-            // richTextBox1
+            // deleteButton
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(667, 268);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(190, 96);
-            this.richTextBox1.TabIndex = 24;
-            this.richTextBox1.Text = "";
+            this.deleteButton.Location = new System.Drawing.Point(269, 468);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(75, 23);
+            this.deleteButton.TabIndex = 25;
+            this.deleteButton.Text = "Delete";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
-            // button2
+            // closeButton
             // 
-            this.button2.Location = new System.Drawing.Point(269, 468);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = true;
+            this.closeButton.Location = new System.Drawing.Point(570, 468);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(75, 23);
+            this.closeButton.TabIndex = 27;
+            this.closeButton.Text = "Close";
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
-            // button3
+            // bloodGroupComboBox
             // 
-            this.button3.Location = new System.Drawing.Point(418, 468);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 26;
-            this.button3.Text = "Reset";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(570, 468);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 27;
-            this.button4.Text = "Close";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.bloodGroupComboBox.FormattingEnabled = true;
+            this.bloodGroupComboBox.Items.AddRange(new object[] {
             "A+",
             "A-",
             "B+",
@@ -322,10 +310,28 @@
             "AB-",
             "O+",
             "O-"});
-            this.comboBox1.Location = new System.Drawing.Point(667, 183);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(189, 24);
-            this.comboBox1.TabIndex = 28;
+            this.bloodGroupComboBox.Location = new System.Drawing.Point(667, 183);
+            this.bloodGroupComboBox.Name = "bloodGroupComboBox";
+            this.bloodGroupComboBox.Size = new System.Drawing.Size(189, 24);
+            this.bloodGroupComboBox.TabIndex = 28;
+            // 
+            // genderComboBox
+            // 
+            this.genderComboBox.FormattingEnabled = true;
+            this.genderComboBox.Location = new System.Drawing.Point(209, 400);
+            this.genderComboBox.Name = "genderComboBox";
+            this.genderComboBox.Size = new System.Drawing.Size(190, 24);
+            this.genderComboBox.TabIndex = 29;
+            // 
+            // buttonReset
+            // 
+            this.buttonReset.Location = new System.Drawing.Point(415, 468);
+            this.buttonReset.Name = "buttonReset";
+            this.buttonReset.Size = new System.Drawing.Size(75, 23);
+            this.buttonReset.TabIndex = 30;
+            this.buttonReset.Text = "Reset";
+            this.buttonReset.UseVisualStyleBackColor = true;
+            this.buttonReset.Click += new System.EventHandler(this.resetButton_Click);
             // 
             // DeleteDonorForm
             // 
@@ -333,22 +339,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.BackgroundImage = global::Project5Final.Properties.Resources.BackgroundGradient;
-            this.ClientSize = new System.Drawing.Size(904, 501);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(904, 606);
+            this.Controls.Add(this.buttonReset);
+            this.Controls.Add(this.genderComboBox);
+            this.Controls.Add(this.bloodGroupComboBox);
+            this.Controls.Add(this.closeButton);
+            this.Controls.Add(this.deleteButton);
+            this.Controls.Add(this.addressRichTextBox);
+            this.Controls.Add(this.cityTextBox);
+            this.Controls.Add(this.emailTextBox);
+            this.Controls.Add(this.donorIDTextBox);
+            this.Controls.Add(this.mobileNumberTextBox);
+            this.Controls.Add(this.dobTextBox);
+            this.Controls.Add(this.motherNameTextBox);
+            this.Controls.Add(this.fatherNameTextBox);
+            this.Controls.Add(this.nameTextBox);
+            this.Controls.Add(this.searchButton);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -360,10 +366,11 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.deleteDonorLabel);
             this.Controls.Add(this.dataGridView1);
             this.Name = "DeleteDonorForm";
             this.Text = "DeleteDonorForm";
+            this.Load += new System.EventHandler(this.DeleteDonorForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -373,7 +380,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label deleteDonorLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -385,20 +392,21 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.TextBox fatherNameTextBox;
+        private System.Windows.Forms.TextBox motherNameTextBox;
+        private System.Windows.Forms.TextBox dobTextBox;
+        private System.Windows.Forms.TextBox mobileNumberTextBox;
+        private System.Windows.Forms.TextBox donorIDTextBox;
+        private System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.TextBox cityTextBox;
+        private System.Windows.Forms.RichTextBox addressRichTextBox;
+        private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button resetButton;
+        private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.ComboBox bloodGroupComboBox;
+        private System.Windows.Forms.ComboBox genderComboBox;
+        private System.Windows.Forms.Button buttonReset;
     }
 }

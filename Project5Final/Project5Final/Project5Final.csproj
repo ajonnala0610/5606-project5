@@ -76,12 +76,14 @@
     <Compile Include="BloodBankManagementForm.Designer.cs">
       <DependentUpon>BloodBankManagementForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteDonorDataAccess.cs" />
     <Compile Include="DeleteDonorForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DeleteDonorForm.Designer.cs">
       <DependentUpon>DeleteDonorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteDonorIntermediary.cs" />
     <Compile Include="IBloodBankIntermediary.cs" />
     <Compile Include="IStock.cs" />
     <Compile Include="Program.cs" />

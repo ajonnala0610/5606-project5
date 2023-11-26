@@ -55,7 +55,8 @@ namespace Project5Final
 
         private void deleteDonorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            DeleteDonorForm dd=new DeleteDonorForm();
+            dd.Show();
         }
     }
 

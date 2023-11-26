@@ -13,12 +13,19 @@ namespace Project5Final
 {
     public partial class DeleteDonorForm : Form
     {
-        readonly function fn = new function();
-        String query;
+         private readonly function fn = new function();
+         private String query;
+        //declare the datagridview
+        private DataGridView dataGridView;
 
         public DeleteDonorForm()
         {
             InitializeComponent();
+            //intialize datagridview
+            dataGridView = new DataGridView();
+            dataGridView1.Dock = DockStyle.Fill;
+            //add Datagridview to the forms controls
+            this.Controls.Add(dataGridView1);
         }
 
         private void DeleteDonorForm_Load(object sender, EventArgs e)

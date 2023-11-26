@@ -9,7 +9,7 @@ namespace Project5Final
 {
     internal class DeleteDonorIntermediary
     {
-        private object bbDataAccess;
+        private  DeleteDonorDataAccess bbDataAccess;
 
         public string DBError { get; set; }
         public DataSet DeleteDonor()
@@ -17,7 +17,7 @@ namespace Project5Final
             try
             {
                 //instantiate the DATA ACCESS CLASS.
-                DeleteDonorDataAccess deleteDonorDataAccess = new DeleteDonorDataAccess();
+                bbDataAccess = new DeleteDonorDataAccess();
                 //create the query needed in order to get the data from the class
                 string sqlQuery = "SELECT * FROM DeleteDonor;";
                 //call the method and supply the sql query to data access class

@@ -23,42 +23,49 @@ namespace Project5Final
         //Set up the connection
         public SqlConnection GetConnection()
         {
-            if(bloodbankdataConnection == null)
+            if (bloodbankdataConnection == null)
             {
                 bloodbankdataConnection = new SqlConnection(bbConnString);
-                return bloodbankdataConnection;
-            }//end GetConnection()
-            //open the connection
-            Public void OpenNwConnection()
-            {
-                if(bloodbankdataConnection.State== ConnectionState.Closed)
-                    bloodbankdataConnection.Open();
-            }//end open Connection
-            //close connection
-            Public void closeNWConnection()
-            {
-                bloodbankdataConnection.Close();
-            }//end closeNWConnection
-            Public DataSet DeleteDonorSelectQueryData(string query)
-                {
-                DataSet bbDataSet = new DataSet();
-                try
-                {
-                    //instantiate data adapter:
-                    DataAdapter bbDataAdapter = new SqlDataAdapter(query, this.GetConnection());
-                    //open the connection:
-                    this.OpenNWConnection();
-                    //fill the data into the data set
-                    bbDataAdapter.Fill(bbDataSet);
-                    return bbDeleteDonor;
-                }//try
-                catch (Exception ex)
-                {
-                    throw ex.InnerException;
-                }
-                finally { bloodbankdataConnection.Close(); }
             }
-
+            return bloodbankdataConnection;
+        }
+        //open the connection
+        public void OpenNwConnection()
+        {
+            if (bloodbankdataConnection.State == ConnectionState.Closed)
+            {
+                bloodbankdataConnection.Open();
+            }//end open Connection
+        }
+        //close connection
+        public void OpenNWConnection()
+        {
+            bloodbankdataConnection.Close();
+        }//end closeNWConnection
+        public DataSet DeleteDonorSelectQueryData(string query)
+        {
+            DataSet bbDataSet = new DataSet();
+            try
+            {
+                //instantiate data adapter:
+                SqlDataAdapter bbDataAdapter = new SqlDataAdapter(query, this.GetConnection());
+                //open the connection:
+                this.OpenNWConnection();
+                //fill the data into the data set
+                bbDataAdapter.Fill(bbDataSet);
+                return bbDataSet;
+            }//try
+            catch (Exception ex)
+            {
+                throw ex.InnerException;
+            }
+            finally
+            {
+                if (bloodbankdataConnection.State == ConnectionState.Open)
+                {
+                    bloodbankdataConnection.Close();
+                }
+            }
         }
     }
 }
